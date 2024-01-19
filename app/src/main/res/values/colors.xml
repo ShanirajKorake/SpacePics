@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_theme_color_1">#2d2d30</color>
+    <color name="Tin_Soldier">#bebebe</color>
+    <color name="dark_theme_color_2">#878683</color>
+    <color name="black2">#282828</color>
+</resources>

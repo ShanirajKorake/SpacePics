@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme_color_1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/txt1"
+        android:text="@string/app_name"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/Tin_Soldier"/>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        app:layout_constraintBottom_toTopOf="@id/pls1">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/black2"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/info_text_1"
+            android:textColor="@color/dark_theme_color_2"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black2"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/Maharashtra"
+            android:textColor="@color/dark_theme_color_2"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pls1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="30dp"
+        android:background="@color/dark_theme_color_2"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll3">
+
+        <ImageView
+            android:id="@+id/placeImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/Mumbi_description"
+            app:srcCompat="@drawable/mumbai" />
+
+        <TextView
+            android:id="@+id/placeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/Mumbi_description"
+            android:textColor="@color/black2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll2"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pls1">
+
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Back_description"
+            android:onClick="prevImg"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+
+        <ImageButton
+            android:id="@+id/btnNxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Next_description"
+            android:onClick="nxtImg"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

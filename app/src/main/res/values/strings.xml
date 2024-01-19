@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlacePics</string>
+    <string name="info_text_1">Best Places to visit in </string>
+    <string name="Maharashtra">Maharashtra</string>
+    <string name="Next_description">Next</string>
+    <string name="Back_description">Back</string>
+    <string name="Mumbi_description">Mumbai</string>
+    <string name="Lonavla_description">Lonavla</string>
+    <string name="Mahabaleshwar_description">Mahabaleshwar</string>
+    <string name="Ajanta_description">Ajanta</string>
+    <string name="Shidri_description">Shirdi</string>
+
+
+
+
+
+</resources>
